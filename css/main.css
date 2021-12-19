@@ -1,0 +1,743 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0; }   100% { opacity: 1; }   }
+
+
+
+html{
+    scroll-behavior: smooth;
+    overflow: hidden
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    /* height: 740px; */
+    scroll-behavior: smooth;
+    font-size: 100px;
+}
+
+header a{
+    text-decoration: none;
+    -webkit-animation: fade-in 5s linear; /* Safari 4+ */
+  -moz-animation: fade-in 5s linear; /* Fx 5+ */
+  -o-animation: fade-in 5s linear; /* Opera 12+ */
+  animation: fade-in 5s linear; /* IE 10+, Fx 29+ */
+}
+
+.header-image{
+    padding: 0;
+    background-image: url(../img/bg4.jpg);
+    padding: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header-lable{
+    margin-top: 200px;
+    -webkit-animation: fade-in 3s linear; /* Safari 4+ */
+  -moz-animation: fade-in 3s linear; /* Fx 5+ */
+  -o-animation: fade-in 3s linear; /* Opera 12+ */
+  animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
+}
+
+.btn-next{
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.wrapper{
+    /* padding: 100px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+    text-align: justify;
+    /* align-items: center; */
+    /* text-align: center; */
+    -webkit-animation: fade-in 5s linear; /* Safari 4+ */
+    -moz-animation: fade-in 5s linear; /* Fx 5+ */
+    -o-animation: fade-in 5s linear; /* Opera 12+ */
+    animation: fade-in 5s linear; /* IE 10+, Fx 29+ */
+}
+
+.wrapper_2{
+  background-color: #fff0f5;
+  padding: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  font-family: 'Neucha', cursive;
+  font-size: 25px;
+    text-align: justify;
+  align-items: center;
+  text-align: center;
+  -webkit-animation: fade-in 5s linear; /* Safari 4+ */
+  -moz-animation: fade-in 5s linear; /* Fx 5+ */
+  -o-animation: fade-in 5s linear; /* Opera 12+ */
+  animation: fade-in 5s linear; /* IE 10+, Fx 29+ */
+}
+
+.wrapper_3{
+  background-color: #e0ffff;
+  padding: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  font-size: 25px;
+  text-align: justify;
+  -webkit-animation: fade-in 3s linear; /* Safari 4+ */
+  -moz-animation: fade-in 3s linear; /* Fx 5+ */
+  -o-animation: fade-in 3s linear; /* Opera 12+ */
+  animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
+}
+
+.container-left{
+    width: 90%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    align-items: center;
+    text-align: center;
+    padding: 150px;
+    -webkit-animation: fade-in 3s linear; /* Safari 4+ */
+    -moz-animation: fade-in 3s linear; /* Fx 5+ */
+    -o-animation: fade-in 3s linear; /* Opera 12+ */
+    animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
+}
+
+.left-block{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    margin-bottom: 170px;
+}
+.right-block{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    height: 100vh;
+}
+.right-block a{
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+.img img{
+    padding-right: 30px;
+    /* padding-bottom: 50px; */
+    /* margin: 0 auto; */
+    max-width: 500px;
+}
+
+.container-right{
+    width: 90%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding: 150px;
+    /* border: 1px solid green; */
+    align-items: center;
+    text-align: center;
+    -webkit-animation: fade-in 3s linear; /* Safari 4+ */
+    -moz-animation: fade-in 3s linear; /* Fx 5+ */
+    -o-animation: fade-in 3s linear; /* Opera 12+ */
+    animation: fade-in 3s linear; /* IE 10+, Fx 29+ */
+}
+
+
+
+
+.frame-outer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  border: 10px solid #D7CDC7;
+  padding: 10px;
+}
+.frame-inner {
+  text-align: center;
+  position: relative;
+  border: 10px solid #D7CDC7;
+ }
+.frame-outer:before, 
+.frame-outer:after, 
+.frame-inner:before, 
+.frame-inner:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #F9F9F9;
+  background-image: linear-gradient(90deg, #DB9E3D 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #DB9E3D 66%, #DB9E3D),
+  linear-gradient(90deg, #DB9E3D 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #DB9E3D 66%, #DB9E3D);
+  background-repeat: no-repeat;
+  background-size: 30px 10px;
+  background-position: 0 0, 0 20px;
+}
+.frame-outer:before {
+  left: -10px;
+  top: -10px;
+  z-index: 3;
+}
+.frame-outer:after {
+  right: -10px;
+  top: -10px;
+  z-index: 3;
+  background-position: 10px 0, 10px 20px;
+}
+.frame-inner:before {
+  left: -30px;
+  bottom: -30px;
+  background-position: 0 10px, 0px 30px;
+}
+.frame-inner:after {
+  right: -30px;
+  bottom: -30px;
+  background-position: 10px 10px, 10px 30px;
+}
+.frame-inner p {
+font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 18px; 
+  color: #7A7B82; 
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+/* Likes svg */
+
+
+
+
+
+
+
+
+svg {
+    cursor: pointer;
+    overflow: visible;
+    width: 60px;
+    margin: 20px;
+  }
+  
+  svg #heart {
+    transform-origin: center;
+    animation: animateHeartOut .3s linear forwards;
+  }
+  
+  svg #main-circ {
+    transform-origin: 29.5px 29.5px;
+  }
+  
+  .checkbox {
+    display: none;
+  }
+  
+  .checkbox:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s;
+  }
+  
+  .checkbox:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1;
+  }
+  
+  .checkbox:checked+label svg #grp1 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp1 #oval1 {
+    transform: scale(0) translate(0, -30px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp1 #oval2 {
+    transform: scale(0) translate(10px, -50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp2 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp2 #oval1 {
+    transform: scale(0) translate(30px, -15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp2 #oval2 {
+    transform: scale(0) translate(60px, -15px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp3 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp3 #oval1 {
+    transform: scale(0) translate(30px, 0px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp3 #oval2 {
+    transform: scale(0) translate(60px, 10px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp4 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp4 #oval1 {
+    transform: scale(0) translate(30px, 15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp4 #oval2 {
+    transform: scale(0) translate(40px, 50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp5 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp5 #oval1 {
+    transform: scale(0) translate(-10px, 20px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp5 #oval2 {
+    transform: scale(0) translate(-60px, 30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp6 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp6 #oval1 {
+    transform: scale(0) translate(-30px, 0px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp6 #oval2 {
+    transform: scale(0) translate(-60px, -5px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp7 {
+    opacity: 1;
+    transition: .1s all .3s;
+  }
+  
+  .checkbox:checked+label svg #grp7 #oval1 {
+    transform: scale(0) translate(-30px, -15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp7 #oval2 {
+    transform: scale(0) translate(-55px, -30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s;
+  }
+  
+  .checkbox:checked+label svg #grp2 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  .checkbox:checked+label svg #grp3 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  .checkbox:checked+label svg #grp4 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  .checkbox:checked+label svg #grp5 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  .checkbox:checked+label svg #grp6 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  .checkbox:checked+label svg #grp7 {
+    opacity: 1;
+    transition: .1s opacity .3s;
+  }
+  
+  @keyframes animateCircle {
+    40% {
+      transform: scale(10);
+      opacity: 1;
+      fill: #DD4688;
+    }
+    55% {
+      transform: scale(11);
+      opacity: 1;
+      fill: #D46ABF;
+    }
+    65% {
+      transform: scale(12);
+      opacity: 1;
+      fill: #CC8EF5;
+    }
+    75% {
+      transform: scale(13);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .5;
+    }
+    85% {
+      transform: scale(17);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .2;
+    }
+    95% {
+      transform: scale(18);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: .1;
+    }
+    100% {
+      transform: scale(19);
+      opacity: 1;
+      fill: transparent;
+      stroke: #CC8EF5;
+      stroke-width: 0;
+    }
+  }
+  
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.2);
+    }
+    40% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes animateHeartOut {
+    0% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+
+/* header btn */
+
+
+
+.hd-btn{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hd-btn a{
+    display: block;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: all .25s;
+  }
+  
+  .hd-btn a:hover{
+    letter-spacing: 15px;
+  }
+
+
+  /* Все что связано с модальными окнами */
+
+  /* свойства модального окна по умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5); /* цвет фона */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in; 
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 1000px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+}
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+@media (min-width: 768px) {
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.testing_calc{
+  width: 100%;
+  height: 500px;
+  background-color: #FFFACD;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.testing_calc img{
+  margin: 0 auto;
+  display: block;
+  max-height: 400px;
+  margin-top: 100px;
+}
+
+.sovmestimost{
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.sovmestimost h2{
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 240px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #FF1493;
+  box-shadow: 0 15px 20px rgba(255, 105, 180, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__links {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  order: 0;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #e3f2fd;
+  box-shadow: 0 2px 4px 0 #e3f2fd;
+}
+
+.tabs__links>a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 10px;
+  text-align: center;
+  color: #1976d2;
+}
+
+.tabs__links>a:hover {
+  background-color: rgba(227, 242, 253, 0.3);
+}
+
+.tabs>#content-1:target~.tabs__links>a[href="#content-1"],
+.tabs>#content-2:target~.tabs__links>a[href="#content-2"],
+.tabs>#content-3:target~.tabs__links>a[href="#content-3"] {
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+.tabs>div:not(.tabs__links) {
+  display: none;
+  order: 1;
+}
+
+.tabs>div:target {
+  display: block;
+}
